@@ -19,10 +19,12 @@ public class Anagrama{
         } 
         else{
 
-            char[] palabra1Char = palabra1.toLowerCase().toCharArray();  
-            char[] palabra2Char = palabra2.toLowerCase().toCharArray();  
+            char[] palabra1Char = palabra1.toCharArray();  
+            char[] palabra2Char = palabra2.toCharArray();  
             Arrays.sort(palabra1Char);  
+             //O(n log n)
             Arrays.sort(palabra2Char);  
+            //O(m log m)
             resultado = Arrays.equals(palabra1Char, palabra2Char); 
         }
 
